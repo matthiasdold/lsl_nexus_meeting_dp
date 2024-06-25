@@ -1,0 +1,170 @@
+:root {
+  --slidev-theme-primary: #80d098ff;
+}
+
+.w-full {
+  z-index: 2;
+}
+
+#slideshow > div:nth-child(1) > div:nth-child(1) {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24pt;
+  strong {
+    color: var(--slidev-theme-primary);
+    font-size: 28pt;
+  }
+}
+
+#slideshow > div:nth-child(1) > div:nth-child(1) > h1 {
+  font-size: 74pt;
+  /* background: url(/single_dareplane_logo_no_font.svg) center no-repeat; */
+  background: url(/single_dareplane_logo.svg) center no-repeat;
+  background-size: 90%;
+  background-position: center;
+  vertical-align: bottom;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 18%;
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  backdrop-filter: brightness(800%);
+  border-radius: 50px;
+}
+
+#title_brain {
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  top: 0%;
+  left: -0%;
+  z-index: -2;
+  filter: grayscale(0);
+  overflow: hidden;
+  background: url(/brain_only.webp) center;
+  filter: grayscale(1) brightness(30%);
+}
+
+.eeg_background_wrapper {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 0%;
+  left: 20%;
+  z-index: -1;
+}
+
+#title_pc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 10%;
+  z-index: -1;
+  filter: grayscale(0);
+  overflow: hidden;
+  background: url(/alerkiv--9jmFkN-_U4-unsplash.jpg) right no-repeat;
+  background-size: contain;
+  filter: grayscale(1) brightness(70%);
+  mask-image: linear-gradient(
+    to right,
+    transparent 60%,
+    rgba(0, 0, 0, 90%) 100%
+  );
+}
+
+#slideshow > div:nth-child(1) #eeg_bg {
+  background: url(/eeg_data_smoothed_5chan.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 15%,
+    rgba(0, 0, 0, 50%) 100%
+  );
+  /* make color white */
+  filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  /* important to set the size so that the keyframe is well controlled! */
+  background-size: 1920px;
+  animation: slideToRight 20s linear infinite;
+  height: 100%;
+  width: 100%;
+}
+
+.control_background_wrapper {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 30%;
+  left: 10%;
+
+  z-index: -1;
+}
+#slideshow > div:nth-child(1) #control_bg {
+  background: url(/binary_signal.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 5%,
+    rgba(0, 0, 0, 50%) 100%
+  );
+  /* make color white */
+  filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  /* important to set the size so that the keyframe is well controlled! */
+  background-size: 1920px;
+  animation: slideToLeft 20s linear infinite;
+  height: 100%;
+  width: 100%;
+}
+
+#full_footer {
+  position: absolute;
+  bottom: 0px;
+  filter: brightness(70%);
+  backdrop-filter: brightness(800%);
+  padding-left: 6%;
+  border-top: solid;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  img {
+    width: 90%;
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    background-position: 0px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+
+  50% {
+    background-position: 960px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+
+  100% {
+    background-position: 1920px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+}
+
+@keyframes slideToLeft {
+  0% {
+    background-position: 1920px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+
+  50% {
+    background-position: 960px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+
+  100% {
+    background-position: 0px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+}

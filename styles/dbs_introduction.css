@@ -1,0 +1,88 @@
+img[alt="time_line_of_DBS"] {
+  width: 95%;
+}
+img[alt="sir_william_sketch"] {
+  width: 75%;
+}
+
+img[alt="dbs_surgery"] {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  object-fit: cover;
+}
+
+img[alt="leksell_frame"] {
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  object-fit: cover;
+  bottom: 4.5%;
+  left: 30%;
+  z-index: 2;
+}
+
+img[alt="DBS_setup"] {
+  z-index: 5;
+}
+
+a[href="https://www.nejm.org/doi/full/10.1056/NEJMct1208070"] {
+  position: absolute;
+  top: 15%;
+  margin-left: 0.5rem;
+}
+
+#brain_stim_page {
+  .column {
+    border: 1px solid var(--slidev-theme-primary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  h5 {
+    color: var(--slidev-theme-primary);
+  }
+
+  li {
+      margin-left: 2rem;
+      line-height: 1.5rem;
+    }
+
+  li::marker {
+    color: var(--slidev-theme-primary);
+  }
+
+  .indication_treatment {
+    list-style: none !important;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    li::marker
+    {
+        content: ' > ';
+        /* color: var(--slidev-theme-primary); */
+    }
+  }
+}
+
+.margin-top-1rem {
+  margin-top: 1rem;
+  line-height: 1.5rem !important;
+  margin-bottom: 0.5rem;
+}
+
+.psychiatric2motor {
+  margin-top: 1rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* background: linear-gradient(90deg, transparent 0%, rgba(108,108,108,1) 53%, rgba(51,51,51,1) 100%); */
+  background: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(21,21,21,1) 100%);
+  p {
+    margin: 0;
+  }
+}

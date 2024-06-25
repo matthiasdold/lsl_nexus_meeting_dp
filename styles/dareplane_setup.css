@@ -1,0 +1,291 @@
+#dareplane_setup {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#dareplane_setup_div{
+  text-align: center;
+}
+#dareplane_setup_div.slidev-vclick-prior {
+  transition: all 500ms ease;
+  transform: scale(0.6) translateX(-50%);
+}
+
+#copyDraw_Test {
+  position: absolute;
+  top: 0;
+  transform: translate(0, 50%);
+  left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#stroop_sketch {
+  position: absolute;
+  top: 0;
+  transform: translate(0, 50%);
+  left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#control_room_svg {
+  position: absolute;
+  top: 0;
+  transform: translate(0, 50%);
+  left: 45%;
+  width: 55%;
+  height: 55%;
+}
+
+
+#closed_loop_example_traces {
+  position: absolute;
+  top: 0;
+  transform: translate(-20%, 25%);
+  left: 45%;
+  width: 85%;
+  height: 75%;
+
+}
+
+
+
+/* #rect86627-2-5 { */
+/*   fill: #33f !important; */
+/* } */
+
+/* #copydraw_paradigm > *:hover { */
+/*   fill: #f55 !important; */
+/*   color: #f55; */
+/* } */
+/**/
+/* #copydraw_paradigm *:hover { */
+/*   fill: #f55 !important; */
+/*   visibility: visible !important; */
+/*   color: #f55; */
+/*   width: 150%; */
+/* } */
+/* #rect86627-2-5-0-7:hover { */
+/*   fill: #f55 !important; */
+/*   color: #f55; */
+/*   width: 150%; */
+/* } */
+/* .#copydraw_img:hover { */
+/*   visibility: visible !important; */
+/* } */
+.eeg_10chan_bg_wrapper_full {
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 30%;
+  z-index: -1;
+  border: 5px red;
+}
+
+
+.eeg_10chan_bg_wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: -20%;
+  left: 30%;
+  z-index: -1;
+  border: 5px red;
+}
+
+.eeg_10chan {
+  background: url(/eeg_data_smoothed_10chan.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 15%,
+    rgba(0, 0, 0, 99%) 100%
+  );
+  height: 100%;
+  /* important to set the size so that the keyframe is well controlled! */
+  animation: slideToRight 10s linear infinite;
+}
+
+#eeg_decoding {
+  position: absolute;
+  top: 32%;
+  left: 48%;
+  width: 80%; 
+  background: white;
+}
+
+.control_in_background_wrapper_bottom {
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 60%;
+  left: 30%;
+  z-index: -1;
+}
+
+#single_control_bg_right {
+  background: url(/control_input_signal.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 15%,
+    rgba(0, 0, 0, 99%) 100%
+  );
+  height: 100%;
+  /* important to set the size so that the keyframe is well controlled! */
+  background-size: 800px;
+  animation: slideToLeft 10s linear infinite;
+}
+
+
+#control_logic {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 40%;
+}
+
+
+.control_in_background_wrapper_dp {
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 0;
+  left: 30%;
+  z-index: -1;
+}
+
+#single_control_bg_dp {
+  background: url(/control_input_signal.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 15%,
+    rgba(0, 0, 0, 99%) 100%
+  );
+  height: 100%;
+  /* important to set the size so that the keyframe is well controlled! */
+  background-size: 600px;
+  animation: slideToRight 10s linear infinite;
+}
+
+.control_out_background_wrapper {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 30%;
+  left: 30%;
+  z-index: -1;
+}
+#control_bg {
+  background: url(/binary_signal.svg) repeat-x left center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 15%,
+    rgba(0, 0, 0, 90%) 50%
+  );
+  /* make color white */
+  filter: grayscale(0) invert(100) brightness(100%);
+  /* important to set the size so that the keyframe is well controlled! */
+  background-size: 1920px;
+  animation: slideToLeft 10s linear infinite;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slideToRight {
+  0% {
+    background-position: 0px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+
+  50% {
+    background-position: 960px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+
+  100% {
+    background-position: 1920px center;
+    filter: grayscale(0) invert(100) hue-rotate(90deg) brightness(100%);
+  }
+}
+
+@keyframes slideToLeft {
+  0% {
+    background-position: 1920px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+
+  50% {
+    background-position: 960px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+
+  100% {
+    background-position: 0px center;
+    filter: grayscale(0) invert(100) hue-rotate(180deg) brightness(100%);
+  }
+}
+
+/* The focus box styling */
+.focusbox {
+  position: absolute;
+  border: 3px solid #f19;
+  top: 50%;
+  left: 30%;
+  width: 4.0rem;
+  height: 3.0rem;
+}
+
+#copydraw_focus {
+  top: 55%;
+  left: 36.5%;
+}
+
+#stroop_focus {
+  width: 3rem;
+  height: 2rem;
+  top: 62.5%;
+  left: 35%;
+}
+
+#input_focus {
+  width: 7.5%;
+  height: 9%;
+  top: 47.5%;
+  left: 19%;
+}
+
+#decoding_focus {
+  width: 6%;
+  height: 9%;
+  top: 48.5%;
+  left: 25.5%;
+}
+
+#control_focus {
+  width: 7.5%;
+  height: 10.5%;
+  top: 66.5%;
+  left: 22.5%;
+}
+
+#ipg_focus {
+  width: 22.5%;
+  height: 10.5%;
+  top: 66.5%;
+  left: 8.5%;
+}
+
+#control_room_focus {
+  width: 31%;
+  height: 5%;
+  top: 34.5%;
+  left: 14%;
+}
+

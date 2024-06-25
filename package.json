@@ -1,0 +1,30 @@
+{
+  "name": "post_hoc_relabeling",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.1",
+    "@slidev/theme-apple-basic": "^0.20.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "@iconify-json/akar-icons": "^1.1.17",
+    "@iconify-json/emojione": "^1.1.6",
+    "@iconify-json/eos-icons": "^1.1.6",
+    "@iconify-json/healthicons": "^1.1.9",
+    "@iconify-json/heroicons": "^1.1.11",
+    "@iconify-json/ic": "^1.1.13",
+    "@iconify-json/icon-park-twotone": "^1.1.9",
+    "@iconify-json/mingcute": "^1.1.7",
+    "@iconify-json/ri": "^1.1.10",
+    "@iconify-json/uiw": "^1.1.7",
+    "playwright-chromium": "^1.36.0"
+  },
+  "type": "module"
+}

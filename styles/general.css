@@ -1,0 +1,123 @@
+/* :root { */
+/*   --slidev-theme-primary: #80d098ff */
+/* } */
+
+@font-face {
+  font-family: "FiraCodeMonoNF";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/FiraCode/FiraCodeNerdFontMono-Medium.ttf");
+}
+
+a {
+  color: var(--slidev-theme-primary);
+  border-style: hidden !important;
+}
+
+.style_svg {
+  filter: invert(77%) sepia(35%) saturate(399%) hue-rotate(85deg) brightness(92%) contrast(88%);
+}
+
+p {
+  opacity: 1 !important;
+}
+
+.slidev-layout {
+  margin-top: 0rem;
+  padding-top: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem !important;
+}
+
+li::marker {
+  color: var(--slidev-theme-primary);
+}
+
+/* a::before { */
+/*     content: "["; */
+/*   } */
+/* a::after { */
+/*     content: "]"; */
+/*   } */
+.footnotes-list {
+  display: flex;
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .footnote-backref {
+    visibility: hidden;
+  }
+  text-align: justify;
+}
+
+.card {
+  border: solid 2px var(--slidev-theme-primary);
+  padding: 1rem;
+  border-radius: 10px;
+  h3 {
+    color: var(--slidev-theme-primary);
+    text-align: center;
+  }
+}
+
+g > .cluster > #subGraph0 {
+  padding: 10px;
+}
+
+.mermaid {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+}
+img[alt="para_dist"] {
+  position: relative;
+  margin-top: 18%;
+  z-index: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1rem;
+  border-top: 1px solid #333;
+  img {
+    margin-right: 1rem;
+  }
+  margin: 0;
+}
+#first_slide_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1rem;
+  img {
+    margin-right: 1rem;
+  }
+  margin: 0;
+}
+
+#footer_cover_div {
+  height: 20px;
+  background-color: #121212;
+  z-index: 1;
+}
+
+.footnotes p {
+  margin-top: 0.0rem; font-size: 0.8rem;
+}
+
+/* have explicitly hidden elements not occupy space */
+.slidev-vclick-hidden-explicitly {
+  display: none;
+}
+.slidev-vclick-hidden {
+  display: none;
+}
+
