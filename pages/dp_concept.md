@@ -5,7 +5,7 @@ clicks: 6
 
 
 <div id='dareplane_setup_div' v-after>
-  <img id="dareplane_setup" src="images/dareplane_setup_for_dark_bg.svg">
+  <img id="dareplane_setup" src="/images/dareplane_setup_for_dark_bg.svg">
   <a href="https://github.com/bsdlab/Dareplane/">https://github.com/bsdlab/Dareplane/</a>
 </div>
 
@@ -18,7 +18,7 @@ clicks: 6
 <!-- Copydraw -->
 <div v-click-hide="2">
   <div v-click="1">
-    <img id="copyDraw_Test" src="images/copyDraw_Test.svg#svgView(viewBox(150, 80, 400, 200))">
+    <img id="copyDraw_Test" src="/images/copyDraw_Test.svg#svgView(viewBox(150, 80, 400, 200))">
     <div id="copydraw_focus" class='focusbox'></div> 
   </div>
 </div>
@@ -44,7 +44,7 @@ clicks: 6
     </div> 
   </div>
 
-  <img id="eeg_decoding" src="images/overview_dbs_modulate_component_all_horizontalLayout.svg#svgView(viewBox(260, -2, 70, 120))">
+  <img id="eeg_decoding" src="/images/overview_dbs_modulate_component_all_horizontalLayout.svg#svgView(viewBox(260, -2, 70, 120))">
 
   <div class='control_in_background_wrapper_bottom'>
     <div id='single_control_bg_right'>
@@ -65,7 +65,7 @@ clicks: 6
     </div> 
   </div>
 
-  <img id="control_logic" src="images/pid_control_logic_dark_bg.svg">
+  <img id="control_logic" src="/images/pid_control_logic_dark_bg.svg">
 
   <div class='control_out_background_wrapper'>
     <div id='control_bg'>
@@ -81,7 +81,7 @@ clicks: 6
 <div v-click-hide="6">
   <div v-click="5">
 
-  <img id="closed_loop_example_traces" src="images/closed_loop_example_traces.svg">
+  <img id="closed_loop_example_traces" src="/images/closed_loop_example_traces.svg">
 
   <div id="ipg_focus" class='focusbox'></div>
 
@@ -93,7 +93,7 @@ clicks: 6
 <div v-click-hide="7">
   <div v-click="6">
 
-  <img id="control_room_svg" src="images/web_gui.svg">
+  <img id="control_room_svg" src="/images/web_gui.svg">
   <div id="control_room_focus" class='focusbox'></div>
 
   </div>

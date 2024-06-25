@@ -16,9 +16,9 @@
 
 <div class='images_right'>
 
-![dareplane_landing](images/dareplane_git_landing.png)
+![dareplane_landing](/images/dareplane_git_landing.png)
 
-![dareplane_utils](images/pypi_dareplane_utils.png)
+![dareplane_utils](/images/pypi_dareplane_utils.png)
 
 </div>
 

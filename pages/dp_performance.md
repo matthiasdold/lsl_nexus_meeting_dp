@@ -3,7 +3,7 @@
 
 <div class='image'>
 
-![benchmark_setups](images/all_benchtops_setup_v4_horizontal.svg)
+![benchmark_setups](/images/all_benchtops_setup_v4_horizontal.svg)
 
 </div>
 
@@ -28,7 +28,7 @@ img {
 
 <div class='image'>
 
-![benchmark_setups](images/benchtop_performance_box_only.svg)
+![benchmark_setups](/images/benchtop_performance_box_only.svg)
 
 </div>
 
@@ -56,7 +56,7 @@ img {
 
 <div class='image'>
 
-![benchmark_setups](images/all_chunk_counts.svg)
+![benchmark_setups](/images/all_chunk_counts.svg)
 
 </div>
 
