@@ -4,7 +4,8 @@ export default defineShikiSetup(() => {
   return {
     theme: {
       dark: 'nord',
-      light: 'min-light',
+      // light: 'min-light',
+      light: 'nord',
     },
   }
 })

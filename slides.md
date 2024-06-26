@@ -1,6 +1,7 @@
 ---
 theme: seriph
 background: "dark"
+colorSchema: dark  # force dark mode
 highlighter: shiki
 class: text-center
 lineNumbers: false
@@ -13,7 +14,7 @@ title: Dareplane update
 ---
 
 
-<div id='title_text'>LSL case on:</div>
+<div id='title_text'>LSL use case within:</div>
 
 # Dareplane
 

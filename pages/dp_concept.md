@@ -1,5 +1,5 @@
 ---
-clicks: 6
+clicks: 7
 ---
 # The Data-driven Research Platform for Neurotechnology - Dareplane
 
@@ -102,5 +102,11 @@ clicks: 6
 <style>
 .eeg_10chan_bg_wrapper {
   top: 20%;
+}
+
+#control_room_svg {
+  position: absolute;
+  height: 70%;
+  top: -10%;
 }
 </style>
