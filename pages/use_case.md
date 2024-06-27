@@ -12,3 +12,26 @@
 </div>
 
 </div>
+
+---
+
+# Using `dareplane-utils`
+```bash
+pip install dareplane-utils
+```
+
+```python
+from dareplane_utils.stream_watcher.lsl_stream_watcher import StreamWatcher
+
+sw = StreamWatcher("my_stream_name")
+
+# connect to stream and initialize buffers
+sw.connect_to_stream()
+
+while True:
+    # Fetch data into buffers
+    sw.update()
+
+    x = sw.unfold_buffer()  # for channel samples, most recent at [-1, :]
+    t = sw.unfold_buffer_t()  # for timestamps
+```
